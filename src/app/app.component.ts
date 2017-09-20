@@ -12,6 +12,7 @@ export class AppComponent {
   // array to hold heros coming back from api call
   heroArray;
 
+  // private property of marvelService, created (injected) for this class
   constructor(private marvelService : MarvelService){}
 
   // method to bring back 100 heros
@@ -50,6 +51,7 @@ export class AppComponent {
     
   }
 
+  // run getMarvelHeros on init of this class
   ngOnInit (){
     this.getMarvelHeros();
   }

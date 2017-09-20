@@ -1,7 +1,7 @@
-<!--The content below is only a placeholder and can be replaced.-->
 
-<!-- bring in child search component, include all searchAttributes, and listen for newSearch event emission-->
-<app-search #searchAttributes (newSearch)="getSearchHeros($event)"></app-search>
+<!-- bring in child search component, and listen for newSearch event emission, the call getSearchHeros -->
+<!-- use selector from search.component.ts -->
+<app-search (newSearch)="getSearchHeros($event)"></app-search>
 
 <div id="heroBox">
     <br>
@@ -13,6 +13,7 @@
         <!-- set up bootstrap thumbnail class -->
         <div class="thumbnail">
           <!-- need to build img src from path and extension from api -->
+          <!-- could also use [src]= "hero.thumbnail.path + "." + hero.thumbnail.extension"-->
           <img src="{{hero.thumbnail.path}}.{{hero.thumbnail.extension}}" alt="{{hero.name}}">
           <div class="caption">
             <h4>{{hero.name}}</h4>

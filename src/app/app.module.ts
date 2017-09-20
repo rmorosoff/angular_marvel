@@ -18,6 +18,7 @@ import { SearchComponent } from './search/search.component';
     FormsModule
   ],
   providers: [
+    // correspponds to import up top and brings in the injectable from our service
     MarvelService
   ],
   bootstrap: [AppComponent]
