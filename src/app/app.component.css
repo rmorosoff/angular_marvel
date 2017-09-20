@@ -1,0 +1,20 @@
+
+
+#heroBox {
+    background-color: black;
+}
+
+
+  .thumbnail>img {
+      height: 200px;
+      width: 200px
+  }
+  
+  #heroCard {
+    border: 1px solid greenyellow;
+    text-align: center;
+    background-color: black;
+    color: white
+  }
+  
+  
